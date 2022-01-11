@@ -43,8 +43,7 @@ public class Goods {
         for (int i = 0; i < split.length; i++) {
 
             String[] split1 = split[i].split(":");
-            spec.put("specifications",split1[0]);
-            spec.put("parameter",split1[1]);
+            spec.put(split1[0],split1[1]);
         }
         return spec;
     }
